@@ -5,20 +5,25 @@ include Authentication
 require "selenium-webdriver"
 
 def searchBox
-	search_value ="mugs"
+	search_value ="dress"
 	puts "search for #{search_value}"
-	sleep(3)
+  
+	sleep(2)
 		@driver.find_element(:css, "#aws_form_search > #appendedInputButtons").click
  		@driver.find_element(:css, "#aws_form_search > #appendedInputButtons").clear
   		@driver.find_element(:css, "#aws_form_search > #appendedInputButtons").send_keys("#{search_value}")
   		@driver.find_element(:css, "#aws_form_search > #submitButton").click
   		wait_for_spinner
+      sleep(2)
   		puts title = @driver.find_element(:css, "#catalog-wrap > h1").text 
   		slider_value = @driver.find_element(:css,"#price-filter > span.price-total-count").text.gsub("Items", "").to_i
   		puts "slider_value is : #{slider_value}"
   		sleep(3)	
   		flag=0
+      j=0
+      k=1
   		for i in 1..slider_value
+        j=j+1
   			sleep(3)
   			product_name = @driver.find_element(:css,"#product-container > div > ul > li:nth-child(#{i}) > div > div.product-Info > span.product-description.text-left > a").text
         puts product_name
@@ -45,9 +50,22 @@ def searchBox
   				end
   			end		
         puts "flag value is #{flag}"
-  					
-        if i==3
-  			 @driver.execute_script("window.scrollBy(0,100)", "") #scroll down after checking the products in first row
+  			
+
+        if j==3
+  			 @driver.execute_script("window.scrollBy(0,300)", "") #scroll down after checking the products in first row
+          j=0
+          puts "inside if of scroll"
+          if i== k*12
+            @driver.execute_script("window.scrollBy(0,500)", "")
+            sleep(2)
+            wait_for_spinner # calling wait for spinner for every 12 elements
+            wait_for_spinner
+            sleep(3) 
+            k=k+1
+            puts "inside if of wait_for_spinner n k value is #{k}"
+
+          end
         end
   		end
   		puts "flag value is #{flag}"
