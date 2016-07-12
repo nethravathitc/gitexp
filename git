@@ -1,0 +1,20 @@
+https://git-scm.com/book/ch2-5.html
+
+
+navigate to the desired directory
+
+cd gitexp
+git remote add pb https://github.com/nethravathitc/gitexp (pb vl b other name for the URL, by executing this v r saying where is our remote repository)
+git init (vl initial ur current directory)
+git add file_name
+git status (to check the added file for which are about to commit)
+
+git commit -m "comment that you want for ur file"
+git push pb master
+
+git clone URL
+git pull
+
+git remote -v (to know the name of the configured remote server)
+git remote -v (to know the url associated with remote server)
+
