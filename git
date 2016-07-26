@@ -18,3 +18,20 @@ git pull
 git remote -v (to know the name of the configured remote server)
 git remote -v (to know the url associated with remote server)
 
+---------------------------------
+rails
+
+http://guides.rubyonrails.org/getting_started.html
+
+to start the rvm in this machine
+source ~/.rvm/scripts/rvm
+rvm use ruby-2.2.4@rails4
+
+
+linux
+
+http://learnrubythehardway.org/book/
+
+A package manager or package management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system in a consistent manner.
+about pakage management - https://www.linode.com/docs/tools-reference/linux-package-management
+
