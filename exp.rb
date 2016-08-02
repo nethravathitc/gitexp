@@ -1,5 +1,6 @@
 class Exp
-	#attr_reader :a #symbol
+	attr_reader :a ,:c# attribute reader
+	attr_writer :c , :a # attribute writer
 	def initialize
 		@a=0
 		@b=0
@@ -22,3 +23,9 @@ e.b=20
 
 puts e.a
 puts e.b
+
+puts "attribute reader and writer"
+e.c=100
+puts "c value is :" + e.c.to_s
+e.a=200
+puts "a attribute value is :" + e.a.to_s
