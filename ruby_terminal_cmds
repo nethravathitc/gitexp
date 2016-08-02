@@ -1,3 +1,10 @@
+Learning ruby
+
+http://rubylearning.com/satishtalim/tutorial.html
+
+
+
+
 tail -f  /var/lib/gems/1.9.1/gems/ffi-1.9.10/ext/ffi_c/gem_make.out
 rvm install 2.3.1-dev
 ruby -v
@@ -6,6 +13,9 @@ which ruby
 sudo gem install selenium-webdriver
 
 ruby online book--- http://ruby-doc.com/docs/ProgrammingRuby/
+
+
+
 
 --rvm installation
 https://rvm.io/rvm/install
@@ -19,6 +29,10 @@ rvm use ruby-2.2.4@rails4.2
 
 --making ruby default
 rvm use ruby 2.2.4 --default
+
+
+-- installing spreadsheet
+sudo gem install spreadsheet
 
 
 
