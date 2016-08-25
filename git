@@ -20,6 +20,10 @@ git pull
 git remote -v (to know the name of the configured remote server)
 git remote -v (to know the url associated with remote server)
 
+
+# Change remote name from 'origin' to 'destination'
+git remote rename origin destination
+
 ---------------------------------
 rails
 
