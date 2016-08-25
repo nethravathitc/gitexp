@@ -2,7 +2,13 @@ Learning ruby
 
 http://rubylearning.com/satishtalim/tutorial.html
 
+http://rubylearning.com
 
+--spreadsheet documentation
+https://github.com/zdavatz/spreadsheet/blob/master/GUIDE.md
+
+--to check net config
+ifconfig
 
 
 tail -f  /var/lib/gems/1.9.1/gems/ffi-1.9.10/ext/ffi_c/gem_make.out
@@ -19,6 +25,10 @@ ruby online book--- http://ruby-doc.com/docs/ProgrammingRuby/
 
 --rvm installation
 https://rvm.io/rvm/install
+
+date : 3-08-2016
+* To start using RVM you need to run `source /home/styletag/.rvm/scripts/rvm`
+
 
 --installing ruby on rvm
 http://tecadmin.net/install-ruby-on-rails-on-ubuntu/
